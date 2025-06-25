@@ -7,12 +7,12 @@ import os
 # Access secrets from secrets.toml
 AWS_ACCESS_KEY_ID = st.secrets["AWS_ACCESS_KEY_ID"]
 AWS_SECRET_ACCESS_KEY = st.secrets["AWS_SECRET_ACCESS_KEY"]
-AWS_REGION = st.secrets["AWS_DEFAULT_REGION"] # Or a specific region if you prefer
+AWS_REGION = st.secrets["AWS_DEFAULT_REGION"] 
 
-# Replace with your actual Bedrock Agent details
-BEDROCK_AGENT_ID = "SFDUD3EGTI" # e.g., "XXXXXXXXXX"
-BEDROCK_AGENT_ALIAS_ID = "OSF2IUBKUI" # e.g., "TSTALIAS"
-LAMBDA_FUNCTION_NAME = "Trail2" # The name of your Lambda function
+
+BEDROCK_AGENT_ID = "SFDUD3EGTI"
+BEDROCK_AGENT_ALIAS_ID = "OSF2IUBKUI"
+LAMBDA_FUNCTION_NAME = "Trail2" 
 
 # Initialize AWS clients
 # Pass credentials explicitly when using st.secrets for boto3 client
@@ -107,3 +107,4 @@ with st.form("legal_inquiry_form"):
 
 st.markdown("---")
 st.markdown("Developed with Streamlit, AWS Bedrock, Lambda, DynamoDB, and SendGrid.")
+st.markdown("Developed By: Bhargava Teja")
